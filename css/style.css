@@ -14,7 +14,9 @@ body{
 
 /*Utilities*/
 
-/*structure control*/
+/* ******** structure control ********** */
+
+
 main{
     background-color: #141922;
     height: calc(100vh - 150px);
@@ -28,6 +30,8 @@ main{
     background-color: #282828;
 }
 
+/*divisione del main in 2 spazi*/
+
 .side-bar{
     width: 90px;
     background-color:black;
@@ -40,6 +44,16 @@ main{
     height: 100%;
     overflow: auto;
     
+}
+
+/*divisione della side-bar in 2 spazi*/
+
+.side-bar-controls{
+    height:calc(100% - 100px);
+}
+
+.installation-account-box{
+    height: 100px;
 }
 
 /* Header-main-section*/
@@ -67,3 +81,6 @@ main{
     color:white;
     text-decoration: none;
 }
+
+
+
