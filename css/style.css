@@ -5,3 +5,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*structure control*/
+main{
+    background-color: #141922;
+    height: calc(100vh - 150px);
+    overflow: auto;
+    font-size: 4rem;
+    color:white;
+    display: flex;
+}
+
+.audio-controls{
+    height: 150px;
+    background-color: #282828;
+}
+
+.side-bar{
+    width: 90px;
+    background-color:black;
+    height: 100%;
+    overflow: hidden;
+}
+
+.main-section{
+    width: calc(100vw - 90px);
+    height: 100%;
+    overflow: auto;
+    
+}
+
+#header-main-section{
+    height: 100px;
+    background-color: #080B12;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+
+p{
+    
+}
