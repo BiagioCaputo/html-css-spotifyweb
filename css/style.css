@@ -6,13 +6,20 @@
     box-sizing: border-box;
 }
 
+/*Generals*/
+
+body{
+    font-family: Montserrat;
+}
+
+/*Utilities*/
+
 /*structure control*/
 main{
     background-color: #141922;
     height: calc(100vh - 150px);
     overflow: auto;
-    font-size: 4rem;
-    color:white;
+    color: white;
     display: flex;
 }
 
@@ -35,6 +42,8 @@ main{
     
 }
 
+/* Header-main-section*/
+
 #header-main-section{
     height: 100px;
     background-color: #080B12;
@@ -42,9 +51,19 @@ main{
     top: 0px;
     left: 0px;
     right: 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
+.upgrade-button{
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 15px 50px;
+    margin-right: 20px;
+}
 
-p{
-    
+.upgrade-button a{
+    color:white;
+    text-decoration: none;
 }
