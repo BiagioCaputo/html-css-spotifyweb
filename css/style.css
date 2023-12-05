@@ -23,7 +23,7 @@ img{
 
 .upper-content{
     background-color: #141922;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 120px);
     color: white;
 
 
@@ -31,13 +31,15 @@ img{
 }
 
 footer{
-    height: 150px;
+    height: 120px;
     background-color: #282828;
     color: white;
 
     padding: 25px 20px;
 
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /*divisione del main in 2 spazi*/
@@ -99,17 +101,19 @@ main{
 }
 
 
-/*Audio-controls panel*/
+/* *************** Audio-controls panel ****************/
 
-.audio-controls > *{
+footer > *{
     flex-basis: calc(100% / 3);
+    
 }
 
 
+/* song generals, left panel*/
 .song-generals{
     display: flex;
     align-items: center;
-    gap:40px;
+    gap:25px;
 }
 
 
@@ -138,3 +142,86 @@ main{
     row-gap: 30px;
 }
 
+/* repdroduction controls, mid panel*/
+
+.reproduction-controls{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.reproduction-controls button{
+    border:none;
+    background: none;
+    font-size: 1.3rem;
+}
+
+
+.state-reproduction{
+    margin-top: 30px;
+
+
+    display: flex;
+    align-items: center;
+    gap:15px;
+}
+
+.total-line{
+    width: 80%;
+    height: 8px;
+
+    background-color:#5B5B5B;
+    border-radius: 20px;
+
+    position: relative;
+
+}
+
+.actual-line{
+
+    width: 20%;
+    height: 8px;
+    background-color: white;
+    border-radius: 20px;
+
+
+    position: absolute;
+    left: 0;
+}
+
+.state-reproduction span{
+    font-size: 12px;
+}
+
+/* Volume and icons, right panel*/
+
+.volume{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    padding: 0 10px;
+    justify-content: flex-end;
+}
+
+.volume-total-line{
+    width: 60%;
+    height: 6px;
+
+    background-color:#5B5B5B;
+    border-radius: 20px;
+
+    position: relative;
+}
+
+.volume-actual-line{
+    width: 20%;
+    height: 6px;
+    background-color: white;
+    border-radius: 20px;
+
+
+    position: absolute;
+    left: 0;
+
+}
