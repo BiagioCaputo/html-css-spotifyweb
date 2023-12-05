@@ -100,11 +100,16 @@ main{
 
 }
 
-
+.side-bar a{
+    color:#A3A3A3;
+}
 .button-img-box{
     width: 40px;
 }
 
+.button-img-box img{
+    filter: grayscale(100%);
+}
 .home-button , .search-button , .library-button{
     display: flex;
     align-items: center;
@@ -131,8 +136,10 @@ main{
 
 .add-playlist{
     font-size: 35px;
+    background-color:#A3A3A3;
     width: 60px;
     height: 60px;
+    border: none;
 }
 .playlist-box a{
     color:#A3A3A3;
@@ -223,17 +230,33 @@ main{
 .song-information h3{
     text-align: center;
     margin:10px 0;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .song-information h5{
     text-align: center;
     color:lightgray;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .img-song{
     margin-bottom: 20px;
+}
+
+.img-song{
+    position: relative;
+}
+
+.card i{
+    font-size: 60px;
+    display: none;
+    position: absolute;
+    
+    top:50%;
+    right:50%;
+    transform: translate(50%, 50%);
+
+    
 }
 /*section mix*/
 .created-for-you{
@@ -331,7 +354,7 @@ footer > *{
     flex-wrap: wrap;
 }
 
-.name-song-playing h5{
+.name-song-playing a{
     color:#777777;
     
 }
@@ -343,6 +366,9 @@ footer > *{
     row-gap: 30px;
 }
 
+.icon-box a{
+    color: #777777;
+}
 /* repdroduction controls, mid panel*/
 
 .reproduction-controls{
@@ -431,11 +457,49 @@ footer > *{
 
 /* *************** Animations ****************/
 
+/*Generals*/
+a:hover{
+    cursor: pointer;
+    color:white;
+}
+
+/*sidebar*/
+
+.add-playlist:hover{
+    box-shadow: 0px 0px 9px white;
+    cursor: pointer;
+}
+
+/*main-header*/
 .upgrade-button:hover{
     scale:1.2;
 }
 
+
+/*Main*/
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover i{
+    display: block;
+}
+
+.card:hover .img-song img{
+    filter: grayscale(0.5);
+}
+
+/*Footer*/
+
+.mini-info a:hover{
+    text-decoration: underline;
+}
+
+
 .control-play:hover{
     scale:1.2;
 }
+
+
 
