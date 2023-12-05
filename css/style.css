@@ -12,11 +12,24 @@ body{
     font-family: Montserrat;
 }
 
+ul{
+    list-style-type: none;
+}
+
 img{
     max-width: 100%;
     display: block;
 }
 /*Utilities*/
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mb-15{
+    margin-bottom: 15px;
+}
 
 /* ******** structure control ********** */
 
@@ -42,10 +55,11 @@ footer{
     justify-content: space-between;
 }
 
+
 /*divisione del main in 2 spazi*/
 
 .side-bar{
-    flex-basis: 100px;
+    flex-basis: 80px;
     background-color:black;
     flex-shrink: 0; /*per non farla stringere a causa del flex grow del main*/
     overflow: hidden;
@@ -95,6 +109,89 @@ main{
 
 /* *************** Main ****************/
 
+/*Nav-bar*/
+
+.nav-bar{
+    padding:20px 0;
+}
+
+
+.links-ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:15px;
+}
+
+.links-ul li{
+    color:#87898D;
+    font-weight: bold;
+    line-height: 2;
+}
+
+/*section recently played*/
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+    margin-top: 30px;
+}
+
+.col{
+    padding: 1rem;
+    flex-basis: 50%;
+}
+
+.song-information h3{
+    text-align: center;
+    margin:10px 0;
+    font-size: 20px;
+}
+
+.song-information h5{
+    text-align: center;
+    color:lightgray;
+    font-size: 14px;
+}
+
+.img-song{
+    margin-bottom: 20px;
+}
+/*section mix*/
+.created-for-you{
+    margin: 40px 0;
+}
+
+
+.advise{
+    color:#707378;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.img-mix{
+    margin-bottom: 20px;
+}
+
+.name-mix{
+    text-align: center;
+}
+/*section popular artists*/
+
+.most-popular-artists h2{
+
+}
+
+.img-artist *{
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.name-artist{
+    text-align: center;
+}
 /* Header-main-section*/
 
 #header-main{
