@@ -431,3 +431,11 @@ footer > *{
 
 /* *************** Animations ****************/
 
+.upgrade-button:hover{
+    scale:1.2;
+}
+
+.control-play:hover{
+    scale:1.2;
+}
+

@@ -35,6 +35,18 @@
     .col{
         flex-basis: 25%;
     }
+
+
+    .reproduction-controls{
+        justify-content: center;
+        gap:30px;
+
+    }
+
+    .icon-box{
+        flex-direction: row;
+        gap:15px;
+    }
 }
 
 
