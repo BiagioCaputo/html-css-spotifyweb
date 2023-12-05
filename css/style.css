@@ -65,7 +65,35 @@ main{
 
 .installation-account-box{
     height: 100px;
+    text-align: center;
 }
+
+
+/* *************** Side-bar ****************/
+
+.spotify-icon{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.logo-name{
+    display: none;
+}
+
+.side-bar-controls{
+    text-align: center;
+    font-size: 35px ;
+    line-height: 1.5;
+}
+
+.account-button{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+
+
+/* *************** Main ****************/
 
 /* Header-main-section*/
 
@@ -225,3 +253,4 @@ footer > *{
     left: 0;
 
 }
+
