@@ -21,15 +21,16 @@ img{
 /* ******** structure control ********** */
 
 
-main{
+.upper-content{
     background-color: #141922;
     height: calc(100vh - 150px);
-    overflow: auto;
     color: white;
+
+
     display: flex;
 }
 
-.audio-controls{
+footer{
     height: 150px;
     background-color: #282828;
     color: white;
@@ -42,15 +43,14 @@ main{
 /*divisione del main in 2 spazi*/
 
 .side-bar{
-    width: 90px;
+    flex-basis: 100px;
     background-color:black;
-    height: 100%;
+    flex-shrink: 0; /*per non farla stringere a causa del flex grow del main*/
     overflow: hidden;
 }
 
-.main-section{
-    width: calc(100vw - 90px);
-    height: 100%;
+main{
+    flex-grow: 1;
     overflow: auto;
     
 }
@@ -67,15 +67,15 @@ main{
 
 /* Header-main-section*/
 
-#header-main-section{
+#header-main{
     height: 100px;
     background-color: #080B12;
 
 
     position: sticky;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    top:0;
+    left: 0;
+    right:0;
 
 
     display: flex;
