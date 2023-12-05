@@ -1,0 +1,28 @@
+/* ************ Dimension: S ************ */
+
+@media screen and (min-width:650px){
+
+    .side-bar{
+        flex-basis: 250px;
+    }
+
+    #logo-piccolo{
+        display: none;
+    }
+
+    #logo-grande{
+        display: block;
+    }
+
+    .hidden-text{
+        display:block;
+    }
+
+    .playlist-box{
+        display: block;
+    }
+
+    .separator{
+        display: block;
+    }
+}
