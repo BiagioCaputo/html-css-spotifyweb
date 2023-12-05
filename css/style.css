@@ -12,6 +12,10 @@ body{
     font-family: Montserrat;
 }
 
+img{
+    max-width: 100%;
+    display: block;
+}
 /*Utilities*/
 
 /* ******** structure control ********** */
@@ -28,6 +32,11 @@ main{
 .audio-controls{
     height: 150px;
     background-color: #282828;
+    color: white;
+
+    padding: 25px 20px;
+
+    display: flex;
 }
 
 /*divisione del main in 2 spazi*/
@@ -61,10 +70,14 @@ main{
 #header-main-section{
     height: 100px;
     background-color: #080B12;
+
+
     position: sticky;
     top: 0px;
     left: 0px;
     right: 0px;
+
+
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -82,5 +95,42 @@ main{
     text-decoration: none;
 }
 
+/*Audio-controls panel*/
 
+.audio-controls > *{
+    flex-basis: calc(100% / 3);
+}
+
+
+.song-generals{
+    display: flex;
+    align-items: center;
+    gap:40px;
+}
+
+
+.song-schedule{
+    display: flex;
+    gap:10px;
+}
+
+.img-song-playing{
+    width: 50px;
+}
+
+.name-song-playing{
+    flex-wrap: wrap;
+}
+
+.name-song-playing h5{
+    color:#777777;
+    
+}
+
+.icon-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
 
