@@ -26,3 +26,24 @@
         display: block;
     }
 }
+
+
+/* ************ Dimension: M ************ */
+
+@media screen and (min-width:768px){
+    
+    .col{
+        flex-basis: 25%;
+    }
+}
+
+
+/* ************ Dimension: XL ************ */
+
+@media screen and (min-width:1200px){
+
+    .col{
+        flex-basis: calc(100% / 6);
+    }
+
+}
