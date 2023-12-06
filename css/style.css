@@ -404,7 +404,7 @@ footer > *{
 
 .actual-line{
 
-    width: 20%;
+    width: 40%;
     height: 8px;
     background-color: white;
     border-radius: 20px;
@@ -418,6 +418,33 @@ footer > *{
     font-size: 10px;
 }
 
+.actual-line-pointer{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+
+    position: absolute;
+    right:0;
+    bottom:0;
+    transform: translate(50% , 25%);
+
+    display: none;
+}
+
+.actual-volume-pointer{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+
+    position: absolute;
+    right:0;
+    bottom:0;
+    transform: translate(50% , 20%);
+
+    display: none;
+}
 /* Volume and icons, right panel*/
 
 .volume{
@@ -508,5 +535,19 @@ li.active::after{
     scale:1.2;
 }
 
+.total-line:hover .actual-line{
+    background-color: lightgreen;
+}
+
+.total-line:hover .actual-line-pointer{
+    display: block;
+}
+
+.volume-total-line:hover .volume-actual-line{
+    background-color: lightgreen;
+}
 
 
+.volume-total-line:hover .actual-volume-pointer{
+    display: block;
+}
