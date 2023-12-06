@@ -52,11 +52,11 @@ footer{
     background-color: #282828;
     color: white;
 
-    padding: 25px 20px;
+    padding: 25px 10px;
 
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap:20px;
 }
 
 
@@ -107,9 +107,6 @@ main{
     width: 40px;
 }
 
-.button-img-box img{
-    filter: grayscale(100%);
-}
 .home-button , .search-button , .library-button{
     display: flex;
     align-items: center;
@@ -347,7 +344,7 @@ footer > *{
 }
 
 .img-song-playing{
-    width: 50px;
+    width: 40px;
 }
 
 .name-song-playing{
@@ -363,7 +360,7 @@ footer > *{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    row-gap: 30px;
+    row-gap: 10px;
 }
 
 .icon-box a{
@@ -391,7 +388,7 @@ footer > *{
 
     display: flex;
     align-items: center;
-    gap:15px;
+    gap:10px;
 }
 
 .total-line{
@@ -418,7 +415,7 @@ footer > *{
 }
 
 .state-reproduction span{
-    font-size: 12px;
+    font-size: 10px;
 }
 
 /* Volume and icons, right panel*/
@@ -477,6 +474,16 @@ a:hover{
 
 
 /*Main*/
+
+li.active::after{
+    content: "";
+    display: block;
+    width: 40%;
+    height: 2px;
+    background-color: lightgreen;
+    margin: 3px auto;
+}
+
 
 .card:hover{
     cursor: pointer;
